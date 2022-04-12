@@ -12,7 +12,7 @@
     <TextView
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:text="Baixar Levantamento"
+        android:text="Baixar SEPAT Levantamento"
         android:gravity="center"
         android:layout_gravity="center"
         android:textSize="20sp"
@@ -35,7 +35,7 @@
     <TextView
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:text="Baixar Sepat Scanner"
+        android:text="Baixar SEPAT Scanner"
         android:layout_gravity="center"
         android:gravity="center"
         android:textSize="20sp"
