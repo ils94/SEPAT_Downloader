@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
     DownloadManager manager;
     String filename = "";
 
-    String levantamentoURL = "https://github.com/ils94/Levantamento/releases/download/release/levantamento.apk";
-    String sepatscannerURL = "https://github.com/ils94/Sepat_Scanner/releases/download/release/sepat-scanner.apk";
+    String levantamentoURL = "https://github.com/ils94/SEPAT_Levantamento/releases/download/release/sepat-levantamento.apk";
+    String sepatscannerURL = "https://github.com/ils94/SEPAT_Scanner/releases/download/release/sepat-scanner.apk";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
