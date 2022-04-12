@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                filename = "levantamento.apk";
+                filename = "sepat-levantamento.apk";
 
                 downloader(levantamentoURL);
 
