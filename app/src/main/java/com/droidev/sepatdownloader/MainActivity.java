@@ -12,7 +12,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.text.method.LinkMovementMethod;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -43,29 +42,23 @@ public class MainActivity extends AppCompatActivity {
 
         link.setMovementMethod(new LinkMovementMethod());
 
-        levantamento.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        levantamento.setOnClickListener(view -> {
 
-                filename = "sepat-levantamento.apk";
+            filename = "sepat-levantamento.apk";
 
-                downloader(levantamentoURL);
+            downloader(levantamentoURL);
 
-                levantamento.setEnabled(false);
-                sepatscanner.setEnabled(false);
-            }
+            levantamento.setEnabled(false);
+            sepatscanner.setEnabled(false);
         });
 
-        sepatscanner.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        sepatscanner.setOnClickListener(view -> {
 
-                filename = "sepat-scanner.apk";
+            filename = "sepat-scanner.apk";
 
-                downloader(sepatscannerURL);
-                levantamento.setEnabled(false);
-                sepatscanner.setEnabled(false);
-            }
+            downloader(sepatscannerURL);
+            levantamento.setEnabled(false);
+            sepatscanner.setEnabled(false);
         });
 
     }
