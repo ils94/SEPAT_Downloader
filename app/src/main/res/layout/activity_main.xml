@@ -4,28 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".MainActivity"
     android:padding="10dp"
-    android:background="@color/white">
+    tools:context=".MainActivity">
 
     <TextView
-        android:layout_height="wrap_content"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
         android:text="Baixar SEPAT Levantamento"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:textSize="20sp"
         android:textColor="@color/black"
-        android:fontFamily="sans-serif-black"/>
+        android:textSize="20sp" />
 
     <Button
-        android:id="@+id/levantamentoDownload"
+        android:id="@+id/sepatLevantamentoDownload"
         android:layout_width="wrap_content"
-        android:layout_gravity="center"
         android:layout_height="wrap_content"
-        android:text="Download"
-        android:backgroundTint="@color/lightblue"/>
+        android:layout_gravity="center"
+        android:backgroundTint="@color/lightblue"
+        android:text="Download" />
 
     <View
         android:layout_width="match_parent"
@@ -33,22 +33,22 @@
         android:background="#c0c0c0" />
 
     <TextView
-        android:layout_height="wrap_content"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
         android:text="Baixar SEPAT Scanner"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textSize="20sp"
         android:textColor="@color/black"
-        android:fontFamily="sans-serif-black"/>
+        android:textSize="20sp" />
 
     <Button
-        android:id="@+id/sepatscannerDownload"
+        android:id="@+id/sepatScannerDownload"
         android:layout_width="wrap_content"
-        android:layout_gravity="center"
         android:layout_height="wrap_content"
-        android:text="Download"
-        android:backgroundTint="@color/lightblue"/>
+        android:layout_gravity="center"
+        android:backgroundTint="@color/lightblue"
+        android:text="Download" />
 
     <View
         android:layout_width="match_parent"
@@ -56,13 +56,36 @@
         android:background="#c0c0c0" />
 
     <TextView
-        android:layout_height="wrap_content"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Baixar SEPAT Agenda"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/sepatAgendaDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/lightblue"
+        android:text="Download" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:text="Após o download ser concluído, a pasta de downloads será aberta. Click no arquivo .APK para iniciar a instalação."
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <View
         android:layout_width="match_parent"
@@ -70,13 +93,13 @@
         android:background="#c0c0c0" />
 
     <TextView
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
         android:id="@+id/link"
-        android:text="@string/hyperlink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:textSize="20sp"
-        android:textColor="@color/black"/>
+        android:text="@string/hyperlink"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
 </LinearLayout>
