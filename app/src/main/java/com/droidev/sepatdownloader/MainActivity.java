@@ -18,11 +18,9 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.io.File;
-
 public class MainActivity extends AppCompatActivity {
 
-    Button sepatLevantamento, sepatScanner, sepatAgenda;
+    Button sepatLevantamento, sepatScanner, sepatInventario, sepatAgenda;
     TextView link;
     DownloadManager manager;
     String filename = "";
@@ -31,12 +29,9 @@ public class MainActivity extends AppCompatActivity {
     String sepatLevantamentoURL = "https://github.com/ils94/SEPAT_Levantamento/releases/download/release/sepat-levantamento.apk";
     String sepatScannerURL = "https://github.com/ils94/SEPAT_Scanner/releases/download/release/sepat-scanner.apk";
     String sepatAgendaURL = "https://github.com/ils94/SEPAT_Agenda/releases/download/release/sepat-agenda.apk";
+    String sepatInventarioURL = "https://github.com/ils94/SEPAT_Inventario/releases/download/release/sepat-inventario.apk";
 
     public void downloader(String url) {
-
-        File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-        File file = new File(path, filename);
-        file.delete();
 
         manager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
         Uri uri = Uri.parse(url);
@@ -72,11 +67,13 @@ public class MainActivity extends AppCompatActivity {
             sepatLevantamento.setEnabled(false);
             sepatScanner.setEnabled(false);
             sepatAgenda.setEnabled(false);
+            sepatInventario.setEnabled(false);
         } else {
 
             sepatLevantamento.setEnabled(true);
             sepatScanner.setEnabled(true);
             sepatAgenda.setEnabled(true);
+            sepatInventario.setEnabled(true);
         }
     }
 
@@ -90,6 +87,8 @@ public class MainActivity extends AppCompatActivity {
         sepatLevantamento = findViewById(R.id.sepatLevantamentoDownload);
 
         sepatScanner = findViewById(R.id.sepatScannerDownload);
+
+        sepatInventario = findViewById(R.id.sepatInventarioDownload);
 
         sepatAgenda = findViewById(R.id.sepatAgendaDownload);
 
@@ -111,6 +110,15 @@ public class MainActivity extends AppCompatActivity {
             filename = "sepat-scanner.apk";
 
             downloader(sepatScannerURL);
+
+            enableDisableButtons();
+        });
+
+        sepatInventario.setOnClickListener(view -> {
+
+            filename = "sepat-inventario.apk";
+
+            downloader(sepatInventarioURL);
 
             enableDisableButtons();
         });

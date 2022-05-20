@@ -61,6 +61,29 @@
         android:layout_gravity="center"
         android:fontFamily="sans-serif-black"
         android:gravity="center"
+        android:text="Baixar SEPAT Inventario"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/sepatInventarioDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/lightblue"
+        android:text="Download" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
         android:text="Baixar SEPAT Agenda"
         android:textColor="@color/black"
         android:textSize="20sp" />
