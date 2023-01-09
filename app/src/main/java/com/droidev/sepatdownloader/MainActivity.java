@@ -3,7 +3,6 @@ package com.droidev.sepatdownloader;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
-import android.app.DownloadManager;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 import android.widget.Button;
