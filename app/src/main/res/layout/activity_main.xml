@@ -118,25 +118,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:text="Após o download ser concluído, a pasta de downloads será aberta. Click no arquivo .APK para iniciar a instalação."
+            android:text="Após o download ser concluído, um diálogo aparecerá solicitando a instalação."
             android:textColor="@color/black"
             android:textSize="20sp"
             tools:ignore="HardcodedText" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#c0c0c0" />
-
-        <TextView
-            android:id="@+id/link"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="@string/hyperlink"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
 
     </LinearLayout>
 
